@@ -1,0 +1,108 @@
+@font-face{
+    font-family: 'IBMPlexSans';
+    src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf');
+}
+.episodios{
+    display: list-item;
+    height: 1250px;
+    background-image: linear-gradient(180deg, #0000FF 0%, #0000A3 100%);
+    width: 100%;   
+    margin-top: 6rem;
+    position: relative;
+}
+.episodios::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid  #0000FF;
+    border-left: 100vw solid transparent;
+    top: -100px;
+    position: absolute;
+    right: 0; 
+
+}
+.episodios::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom:100px solid white;
+    border-left: 100vw solid transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+.episodios .titepisodios span{
+    font-family: 'IBMPlexSans';
+    font-size: 36px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 42px;
+    
+}
+.episodios .titepisodios{
+    width: 100%;
+    height: 80px;
+    padding-top: 20px;
+    padding-left: 18px;
+    padding-right: 64px;
+    padding-bottom: 10px;
+}
+.episodios .episodio1{
+    padding-left: 11px;
+    padding-right: 11px;
+
+}
+.episodios .episodio1 iframe{
+    width:100%; 
+    height:232px;
+    border-radius: 3%;
+    cursor: pointer;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+@media screen and (min-width:620px){
+    .episodios{
+        display: inline-block;
+        height: 800px;
+    }
+    .episodios .episodio1{
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-right: 10px;
+        width: 100%;
+    }
+    .episodios .episodio1 iframe{
+        width: 49%;
+        padding-left: 15px;
+        padding-right: 20px;
+    }
+    .episodios .titepisodios{
+        padding-left: 28px;
+    }
+
+}
+@media screen and (min-width:1024px){ /*Configurar el Menu para PC */
+    
+    .episodios {
+        height: 900px; 
+    }
+    .episodios .episodio1{
+        padding-left: 100px;
+        padding-right: 10px;
+       
+    }
+    .episodios .episodio1 iframe{
+        width: 45%;
+        padding-left: 15px;
+        padding-right: 20px;
+        margin-right: 4%;
+        margin-bottom: 5%;
+    }
+    .episodios .titepisodios{
+        padding-left: 15%;
+    }
+
+}

@@ -1,0 +1,108 @@
+@font-face{
+    font-family: 'IBMPlexSans';
+    src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf');
+}
+@font-face{
+    font-family: 'IBMPlexMono-Medium';
+    src: url('../fonts/IBM_Plex_Mono/IBMPlexMono-Medium.ttf');
+}
+
+.ultimasnovedades{
+    width: 100%;
+    background-image: linear-gradient(#0000FF, #0000A3);
+    margin-top: 3rem;
+    position: relative;
+    
+}
+.ultimasnovedades::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid  #0000FF;
+    border-left: 100vw solid transparent;
+    top: -100px;
+    position: absolute;
+    right: 0; 
+}
+.ultimasnovedades h2{
+    padding-top: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 20px;
+    font-family: IBMPlexSans;
+    font-size: 36px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 42px;
+    text-align: center;
+    font-weight: bold;
+}
+.ultimasnovedades .boton{
+    text-align: center;
+    padding: 10px 5% 60px 5%;
+}
+.ultimasnovedades .button1{
+    background-color: #00F3BB;
+    font-family: 'IBMPlexMono-Medium';
+    color: #060A24;
+    font-size: 16px;
+    letter-spacing: 0;
+    text-align: center;
+    text-decoration: none;
+    line-height: 22px;
+    margin-bottom: 60px;
+    margin-top: 15px;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    z-index: 1003;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+@media screen and (max-width:319px){
+    .ultimasnovedades .button1{
+        
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .ultimasnovedades h2{
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .ultimasnovedades .boton{
+        padding-left: 1px;
+        padding-top: 20px;
+        padding-right:1px;
+        padding-bottom: 80px;
+    }
+}
+
+@media screen and (min-width:320px){
+    .ultimasnovedades .button1{
+        
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .ultimasnovedades h2{
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
+    .ultimasnovedades .boton{
+        padding-left: 1px;
+        padding-top: 20px;
+        padding-right:1px;
+        padding-bottom: 60px;
+    }
+}
+@media screen and (min-width:620px){ 
+    .ultimasnovedades .button1{
+        width:350px;
+    }
+    .ultimasnovedades h2{
+        padding-top: 80px;
+        padding-bottom: 20px;
+    }
+}
+

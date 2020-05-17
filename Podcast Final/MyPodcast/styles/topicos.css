@@ -1,0 +1,72 @@
+@font-face{
+    font-family: 'IBMPlexSans-SemiBold';
+    src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-SemiBold.ttf');
+}
+@font-face{
+    font-family: 'IBMPlexSans';
+    src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf');
+}
+
+.topicos .titopicos h4{
+    font-family: 'IBMPlexSans-SemiBold';
+    font-size: 24px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+}
+.topicos .titopicos span{
+    font-family: 'IBMPlexSans';
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    
+}
+.topicos .titopicos{
+    padding-left: 20px;
+    padding-top: 15px;
+    margin-bottom: 37px;
+}
+.topicos .iconos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-left: 30%;
+    width: 100%;
+    
+}
+.topicos .iconos .icon{
+    padding-bottom: 49px;
+}
+@media screen and (min-width:321px){
+
+.topicos .iconos {
+    flex-wrap: wrap;
+    flex-direction: unset;
+    width: 100%;
+    padding-left: 0%;
+}
+.topicos .titopicos{
+    padding-top: 20px;
+    margin-bottom: 45px;
+}
+}
+.topicos .iconos .icon{
+    padding-bottom: 49px;
+    width: 48%;
+}
+@media screen and (min-width:620px){ 
+.topicos .iconos {
+    flex-wrap: nowrap;
+    width: 75%;
+    padding-left: 75px;
+}  
+.topicos .iconos .icon{
+    padding-bottom: 49px;
+    width: 48%;
+}  
+.topicos .titopicos{
+    padding-left: 70px;
+}
+}

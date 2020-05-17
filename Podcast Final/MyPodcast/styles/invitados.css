@@ -1,0 +1,58 @@
+@font-face{
+    font-family: 'IBMPlexSans';
+    src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf');
+}
+.entrevistas .invitadas  span{
+    font-family: 'IBMPlexSans';
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    padding-bottom: 5px;
+}
+.entrevistas .invitadas{
+    width: 288px;
+    height: 110px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top:45px;
+    padding-bottom: 17px;
+}
+
+.entrevistas .imginv img{
+    height: 243px;
+    width: 320px;
+}
+.entrevistas .imginv{
+    display: flex;
+    flex-wrap: wrap;
+}
+.entrevistas .imginv{
+    padding-top: 25px;
+}
+@media screen and (min-width:321px){ 
+    .entrevistas .imginv img{
+        width: 50%;
+        height: auto;
+    }
+    .entrevistas .invitadas{
+        width: auto;
+        height: 110px;
+        padding-top:30px;
+   }
+}
+
+@media screen and (min-width:620px){ /*Configurar el Menu para PC */
+    .entrevistas .invitadas{
+        width: 100%;
+        padding-left: 70px;
+    }
+    .entrevistas .imginv{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .entrevistas .imginv img{
+        width: 33.3%;
+        height: auto;
+}
+}

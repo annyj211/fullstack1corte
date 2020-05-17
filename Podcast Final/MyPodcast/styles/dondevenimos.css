@@ -1,0 +1,113 @@
+@font-face{
+    font-family: 'IBMPlexMono';
+    src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf');
+}
+@font-face{
+    font-family: 'IBMPlexSans';
+    src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf');
+}
+.dondevenimos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dondevenimos .titdondevenimos span{
+    font-family: 'IBMPlexSans';
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+}
+.dondevenimos .titdondevenimos{
+    width: 288px;
+    height: 110px;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 8px;
+}
+.dondevenimos .imgcel img{ 
+    height: 519px;
+    width: 100%;
+    margin-top: -130px;
+    z-index: 1;
+}
+.dondevenimos .imgcel{
+    display: flex;
+    align-content: center;
+    padding-bottom: 10px;
+    
+}
+
+.dondevenimos .desimg {
+    display: flex;
+    text-align: left;
+    padding-top: 8px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    padding-right: 13px;
+    height: 300px;
+   
+}
+.dondevenimos .desimg span{
+
+    font-family: 'IBMPlexMono';
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+@media screen and (min-width:321px){
+    .dondevenimos .desimg {
+        height: auto;
+    }
+    .dondevenimos .titdondevenimos{
+        width: auto;
+        height: auto;
+    }
+
+}
+
+@media screen and (min-width:620px){
+    .dondevenimos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+    .dondevenimos .titdondevenimos{
+        width: 180px;
+        padding-bottom: 1px;
+        padding-right: 2px;
+    }
+
+    .dondevenimos .des-tit-tex{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .dondevenimos .desimg {
+        padding-top: 2px;
+        width: 95%;
+    }
+    .dondevenimos .imgcel img{ 
+        width: 360px;
+        margin-top: -110px;
+    }
+
+    
+}
+@media screen and (min-width:1024px){ /*Configurar el Menu para PC */
+    .dondevenimos {
+        padding-left: 15%;
+    }
+    .dondevenimos .titdondevenimos{
+        width: 100%;
+        padding-top: 70px;
+    }
+    .dondevenimos .desimg {
+        width: 420px;
+    }
+    .dondevenimos .imgcel img{ 
+        height: 600px;
+        width: 417px;
+        margin-top: -150px;
+    }
+}

@@ -1,0 +1,143 @@
+@font-face{
+    font-family: 'IBMPlexMono';
+    src: url('../fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf');
+}
+@font-face{
+    font-family: 'IBMPlexSans';
+    src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf');
+}
+@font-face{
+    font-family: 'IBMPlexMono-Medium';
+    src: url('../fonts/IBM_Plex_Mono/IBMPlexMono-Medium.ttf');
+}
+
+.banner .titulo .titulo1,span .seguido{
+    font-family: 'IBMPlexSans';
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    display:block;
+}
+
+.banner .titdescripcion p{
+    font-family: 'IBMPlexMono',monospace;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin: 17px;
+    text-align: justify;
+}
+.banner .titdescripcion p.cel{
+    visibility: visible;
+}
+.banner .titdescripcion p.desktop{
+    display: none;
+}
+.banner .titulo{
+    display: flex;
+    padding: 16px;
+    flex-wrap: wrap;
+}
+.banner .boton{
+    
+    padding-top: 1rem;
+    padding-bottom: 24px;
+}
+
+.banner .boton .button1{
+    font-family: 'IBMPlexMono-Medium';
+    font-size: 18px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+    background: #00F3BB;
+   
+    text-decoration: none;
+    margin: 16px;
+    cursor: pointer;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 85px;
+    padding-right: 85px;
+}
+
+.boton .button1:hover{ /*Color y letra para cuando se pase el mouse sobre el boton*/
+    color: #FFFFFF;
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+}
+@media screen and (max-width:320px){
+    .banner .boton .button1{
+        
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+@media screen and (min-width:400px){
+    .banner .boton .button1{
+        
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+
+    .banner .boton .a{
+        width:280px;
+    }
+}
+
+@media screen and (min-width:768px){
+.banner .titulo .titulo1,span.seguido{
+    font-size: 43px;
+}
+.banner .titulo .titulo1{
+    margin-left: 79px;
+}
+.banner .boton{
+    padding-top: 5rem;
+}
+.banner .titulo .titulo1 .punto{
+    color: #0000EC;
+}
+
+.banner .titdescripcion p.desktop{
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-block;
+}
+.banner .titdescripcion p.cel{
+    display: none;
+}
+.banner .titdescripcion{
+    width: 600px;
+    height: 48px;
+    margin-left: 80px;
+}
+.banner .boton .button1{
+    margin-top: 50px;
+    margin-left: 98px;
+    width: 228px;
+}
+}
+@media screen  and (min-width:1024px){
+.banner .titulo .titulo1,span.seguido{
+    font-size: 64px;
+    display:inline-block;
+}
+.banner .boton .button1{
+    margin-top: 40px;
+}
+.banner .titdescripcion{
+    width: 640px;
+    margin-left: 135px;
+}
+.banner .boton .button1{
+    margin-top: 50px;
+    margin-left: 150px;
+    width: 228px;
+}
+.banner .titulo .titulo1{
+    margin-left: 130px;
+}
+}

@@ -1,0 +1,158 @@
+@font-face{
+    font-family: IBMPlexMono;
+    src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf');
+}
+@font-face{
+    font-family: IBMPlexMono-Medium;
+    src: url('../fonts/IBM_Plex_Mono/IBMPlexMono-Medium.ttf');
+}
+.logo img{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+}
+.icon-menu i{
+    font-size: 25px;
+    background-color: white;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    width: 98%;
+   /* height: 44px;
+    opacity: 100%;
+    margin: auto;*/
+}
+
+.nav-bar .logo{
+    padding-left: 13px;
+    padding-top: 12px;
+    padding-right: 180px;
+    display: flex;
+}
+
+.nav-bar .menu{
+    /*display: flex;*/
+    padding-top: 12px;
+    padding-right: 19px;
+    height: 44px;
+    width: 1000px;
+}
+
+.menubar{
+    display:none ; /* ocultar el check box*/
+}
+
+header label{
+    float: right;
+    cursor: pointer;
+}
+.menu li{
+    list-style: none;
+}
+.menu li a{
+    font-family: 'IBMPlexMono';
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 28px;
+}
+.acceso {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100vw;
+    /*height: 20vh;  vh Ocupe siempre el alto de la ventana*/
+    background:#0000EC; 
+    transition: all 0.5s;
+    transform: translateX(-100%); /* Ocultar el menu a la izquierda*/
+}
+.acceso a{
+    display: block; /*Poner en bloques los menus, links automaticos*/
+    color: #fff;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px; /*Tamano del bloque*/
+    text-align: justify;
+    
+}
+.acceso a:hover{ /*Color para cuando se pase el mouse sobre el menu*/
+    font-family: 'IBMPlexMono-Medium';
+    font-size: 16px;
+    color: #00F3BB;
+    letter-spacing: 0;
+    line-height: 28px;
+    text-decoration: line-through;
+    
+}
+.acceso a:active { /*Color para cuando se de clic en el menu*/
+    font-family: 'IBMPlexMono';
+    font-size: 16px;
+    color: rgba(6,10,36,0.56);
+}
+
+.menubar:checked ~ .acceso{ /*Cuando se hace clic en el label muestra el menu, selecciona alt+126 ~ el menu */
+ transform: translateX(0%);
+}
+
+.menu-icon::after { /*Asignar icono */
+    font-family: "FontAwesome";
+    content: "\f0c9";
+    font-style:normal;
+}
+
+.icon-menu input:checked ~ .icon-menu::after { /*Cambiar el icono al tener chequeado el menu*/
+    content: "\f00d";
+}
+@media screen and (min-width:768px){ /*Configurar el Menu para PC*/
+    
+    .menu .acceso{
+        display: flex;
+        position: static; /*Quitar la posicion absoluta*/
+        width: auto;
+        height: auto;
+        transform: translateX(0%); /*trasladar el menu*/
+        float: right;
+               
+    }
+    .acceso ul{
+        display: flex;
+    }
+    header .menu-icon::after{
+        display: none;
+    }
+    .menu ul li a{
+        font-family: 'IBMPlexMono';
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 28px;
+        background: white;
+    }
+    .acceso { 
+        background: none;
+    }
+    .nav-bar .menu{
+        /*display: flex;*/
+        padding-top: 9px;
+        
+
+    }
+    .acceso a{
+        padding-top: 9px;
+        padding-right: 19px;
+        padding-left: 19px;
+    }
+
+    .nav-bar .logo{
+        margin-left: 20px;
+        padding-top: 20px;
+    }
+
+}
+@media screen and (min-width:1024px){
+    .nav-bar .logo{
+        margin-left: 45px;
+    }
+}
